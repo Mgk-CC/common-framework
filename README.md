@@ -18,6 +18,7 @@
 | `log/` | 运行日志 | 机器怎么跑的 | [readme](log/readme.md) |
 | `docs/specs/` | 规格与记忆 | 做什么、为什么、踩过什么坑 | [readme](docs/specs/readme.md) |
 | `docs/plan/` | 执行计划 | 怎么走到那儿 | [readme](docs/plan/readme.md) |
+| `docs/web_search/` | 检索证据 | 结论的来源可追溯 | [readme](docs/web_search/readme.md) |
 
 ## 数据流
 

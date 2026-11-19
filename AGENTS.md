@@ -31,6 +31,7 @@
 | `docs/specs/项目进度.md` | ✅ 追加 | ✅ 追加（严禁改格式） |
 | `docs/specs/memory.md` | ✅ 写 | ✅ 追加踩坑（注明来源与会话 ID） |
 | `docs/plan/` | ✅ 写 | 👁 只读 |
+| `docs/web_search/` | ✅ 写 | ✅ 写自己的检索记录 |
 | `src/` | ✅ 写 / 验收 | ✅ 仅限本次任务范围 |
 | `data/core/` | ✅ 写（需授权） | 👁 **只读** |
 | `data/inbox/` | ✅ 建收件目录 | ✅ 建自己的收件目录，必须带 `_inbox.md` |

@@ -60,8 +60,11 @@ data/inbox/
 - 巡检命令（揪出所有没收尾的）：
 
 ```bash
-rg --files-without-match "状态：已" data/inbox/*/_inbox.md
+# 必须带 --no-ignore-vcs：收件箱内容被 .gitignore 忽略，rg 默认会跳过它们
+rg --files-without-match --no-ignore-vcs "状态：已" data/inbox -g "_inbox.md"
 ```
+
+- 退出码 `0` = 抓到未收尾目录（会打印路径）；`1` = 全部已收尾（干净）
 
 ## 红线
 
