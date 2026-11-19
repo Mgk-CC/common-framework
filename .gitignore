@@ -1,0 +1,36 @@
+# 虚拟环境
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 运行日志与临时产物的内容（保留各自的 readme）
+log/*
+!log/readme.md
+temp_text/*
+!temp_text/readme.md
+data/temp/*
+!data/temp/readme.md
+data/inbox/*
+!data/inbox/readme.md
+
+# 数据库文件（派生层，可由 schema.sql + 原始数据重建）
+data/db/*.sqlite
+data/db/*.sqlite-wal
+data/db/*.sqlite-shm
+
+# 本地密钥与配置
+.env
+.env.*
+!.env.example
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 说明：data/core/、data/db/schema.sql 与 output/ 默认纳入版本库。
+# 若 data/core/ 单文件超过 10MB，改用 Git LFS 或移出仓库，先与本项目负责人确认。

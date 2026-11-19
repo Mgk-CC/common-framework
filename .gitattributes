@@ -1,0 +1,22 @@
+# 换行统一为 LF：避免 Windows 下 CRLF 转换造成 agent 提交时「整文件被改」的假 diff
+* text=auto eol=lf
+
+# 明确按 LF 的文本类型
+*.md    text eol=lf
+*.sql   text eol=lf
+*.py    text eol=lf
+*.txt   text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+
+# 二进制，不做任何转换
+*.xlsx  binary
+*.xls   binary
+*.csv   text eol=lf
+*.png   binary
+*.jpg   binary
+*.pdf   binary
+*.zip   binary
+*.sqlite binary
+*.docx  binary

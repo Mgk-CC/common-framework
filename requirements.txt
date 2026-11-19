@@ -1,0 +1,15 @@
+# 项目依赖清单（固定版本号）
+#
+# 安装：pip install -r requirements.txt
+# 环境：必须使用项目根目录的 .venv，禁止装进全局环境
+#         python -m venv .venv
+#         source .venv/Scripts/activate      # Windows（bash）
+#
+# 新增依赖的规范：
+#   1. 先想清楚是否必需，能不引入就不引入
+#   2. 装完后固定版本号写在这里，不用范围符（>=、^）漂移
+#   3. 提交前确认 .venv/ 未被纳入版本库
+#
+# 暂无依赖，示例格式：
+# pandas==2.2.3
+# openpyxl==3.1.5
