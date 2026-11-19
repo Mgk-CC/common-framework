@@ -2,6 +2,8 @@
 
 一个为 **Agent 协作**设计的工作区：主理人（Manager）拆计划与验收，Subagent 并行执行。
 
+仓库：`Mgk-CC/common-framework`（私有）
+
 **第一次进来（人或 Agent）请按顺序读**：本文件 → [`AGENTS.md`](AGENTS.md) → 需要动手的那一层目录 readme。
 
 ## 目录地图
