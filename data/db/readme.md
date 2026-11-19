@@ -11,6 +11,7 @@ SQLite 主库：`data/db/warehouse.sqlite`。
 | 是真源吗 | ❌ 不是。真源是 `data/core/` 与可重现的外部来源 |
 | 能重建吗 | ✅ 必须能：`schema.sql` + 原始数据 + ingest 脚本，随时重建 |
 | 进版本库吗 | ❌ 库文件不进（二进制 diff 无意义）；`schema.sql`、`migrations/` 必须进 |
+| 审计怎么留 | `ingest_log` 只活在库里，所以交付时必须导出快照到 `output/<日期>-<主题>/`（见 `output/readme.md`） |
 
 这条决定了很多事：**正因为数据已经安全入库、可重建，那个 Excel 才敢删。**
 

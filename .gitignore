@@ -13,7 +13,10 @@ temp_text/*
 !temp_text/readme.md
 data/temp/*
 !data/temp/readme.md
-data/inbox/*
+# 收件箱：只保留 readme 与每份 _inbox.md 台账，外来文件本体不入库
+# 注意：不能用 data/inbox/* 整目录忽略，否则台账也会被吞、追溯链断裂
+data/inbox/*/*
+!data/inbox/*/*.md
 !data/inbox/readme.md
 
 # 数据库文件（派生层，可由 schema.sql + 原始数据重建）
